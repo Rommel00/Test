@@ -6,10 +6,10 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      {/* Header */}
+    
       <View style={styles.header}>
         <Image
-          source={require('./assets/Image.png')} // Adjust this to your actual image path
+          source={require('./assets/Image.png')} 
           style={styles.logo}
           resizeMode="contain"
         />
@@ -22,9 +22,9 @@ const HomeScreen = () => {
         </View>
       </View>
 
-      {/* Body */}
+     
       <View style={styles.body}>
-        {/* Sidebar Navigation */}
+        
         <View style={styles.sidebar}>
           {sidebarItems.map((item, index) => (
             <TouchableOpacity key={index} style={styles.sidebarButton}>
@@ -33,12 +33,12 @@ const HomeScreen = () => {
           ))}
         </View>
 
-        {/* Main Content */}
+        
         <ScrollView style={styles.mainContent}>
-          {/* Welcome Text */}
+          
           <Text style={styles.welcomeText}>Welcome Dean,</Text>
 
-          {/* Action Buttons */}
+          
           <View style={styles.actionsContainer}>
             <Card style={[styles.card, { backgroundColor: '#D6E9FF' }]}>
               <Icon name="line-scan" size={48} color="#0056A3" />
@@ -54,7 +54,7 @@ const HomeScreen = () => {
             </Card>
           </View>
 
-          {/* Search Bar */}
+          
           <View style={styles.searchContainer}>
             <TextInput
               mode="outlined"
@@ -69,7 +69,7 @@ const HomeScreen = () => {
   );
 };
 
-// Sidebar items with icons
+
 const sidebarItems = [
   { icon: 'menu' },
   { icon: 'home' },
